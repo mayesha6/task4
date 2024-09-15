@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayesha - Foodies</title>
+    <!-- font link  -->
+     
+    <!-- font awesome link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- tailwind css link  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- variable css -->
+    <link rel="stylesheet" href="assets/css/variable.css">  
+    <!-- main css -->
+    <link rel="stylesheet" href="assets/css/style.css">  
+    <!-- responsive css  -->
+     <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <!-- start header section  -->
+    <header class="header-section">
+        <div class="container mx-auto">
+            <div class="header-wrap flex justify-between items-center">
+                <div class="logo">
+                    <img src="assets/img/logo.png" alt="">
+                </div>
+                <nav class="menu" id="menu">
+                    <ul>
+                        <li><a href="#">হোম</a></li>
+                        <li><a href="#">পরিচিতি</a></li>
+                        <li><a href="#">গন্তব্যস্থল</a></li>
+                        <li><a href="#">ট্যুরস</a></li>
+                        <li><a href="#">যোগাযোগ</a></li>
+                        <li><a href="#">ব্লগ</a></li>
+                        <li><a href="#" class="common-button">অভিযান</a></li>
+                    </ul>
+                </nav>
+                <div id="menu-icon" class="menu-icon">
+                    <i class="fa-solid fa-bars-staggered text-2xl hover:text-[--primaryColor] duration-300 cursor-pointer"></i>
+                </div>
+                <div id="menu-close-btn" class="menu-close-btn">
+                    <i class="fa-solid fa-xmark text-2xl hover:text-[--primaryColor] duration-300 cursor-pointer"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header section  -->
+
+    <!-- start hero section  -->
+     <section class="hero-section">
+        <div class="container mx-auto h-full flex justify-center items-center ">
+            <div class="hero-wrap text-center">
+                <a href="#" class="common-button">বিশ্বদর্শন</a>
+                <h1 class="text-7xl py-7 text-white">নতুন গন্তব্য খুঁজুন আমাদের সাথে</h1>
+                <nav class="social-icon">
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-basketball"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+     </section>
+    <!-- end hero section  -->
+
+    <!-- start about us section  -->
+     <section class="about-section my-20 " id="about-section">        
+        <div class="relative py-12" id="about-wrap">
+            <div id="close-btn" class="absolute">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="container mx-auto">
+                <div class="about flex justify-between gap-8 flex-col md:flex-row ">
+                    <div class="about-content md:w-1/2 order-2 md:order-1">
+                        <div class="title">
+                            <h3 class="my-1">আমাদের কথা</h3>
+                            <h2>"সৌমি'র সাথে পথে" নামুন, উন্মোচন করুন নতুন গন্তব্য </h2>
+                        </div>
+                        <p class="mt-1.5 mb-4 text-justify">"সৌমি'র সাথে পথে" হলো একটি ভ্রমণপ্রেমীদের জন্য তৈরি করা একটি প্ল্যাটফর্ম, যেখানে আপনি নতুন গন্তব্যের খোঁজ পাবেন, আকর্ষণীয় অভিজ্ঞতা শেয়ার করতে পারবেন, এবং আপনার নিজের যাত্রাকে আরও রোমাঞ্চকর করতে পারবেন। আমরা বিশ্বাস করি যে প্রতিটি যাত্রা একটি নতুন গল্প বলে, আর সেই গল্পের অংশ হতে আপনাকে সাহায্য করতে আমরা বদ্ধপরিকর। আমাদের লক্ষ্য আপনাকে দুনিয়ার সৌন্দর্য আবিষ্কার করতে সহায়তা করা, যেখান থেকে আপনি স্মৃতি, জ্ঞান, ও অভিজ্ঞতা অর্জন করবেন। আমাদের সাথে আপনার যাত্রাকে আরও সহজ, নিরাপদ, এবং স্মরণীয় করার জন্য আমরা সর্বদা প্রস্তুত।</p>
+                        <a href="#" class="common-button">বিশ্বদর্শন</a>
+                        <a href="#about-section" class="common-button play-btn" id="play-btn"><i class="fa-solid fa-play"></i></a>
+                        <div id="video" class="absolute">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/lepmJc7Gbos?si=-YAl5NPkV79RaCtY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen ></iframe>
+                        </div>
+                    </div>
+                    <div class="about-image md:w-1/2 order-1 md:order-2">
+                        <img src="assets/img/about.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- end about us section  -->
+
+    <!-- start destination section  -->
+     <section class="destination-section my-20">
+        <div class="container mx-auto">
+            <div class="destination-wrap">
+                <div class="title text-center pb-8">
+                    <h3>স্থানীয় সংস্কৃতির ছোঁয়া</h3>
+                    <h2>বাংলাদেশের শীর্ষ আকর্ষণ ও স্থানীয় সংস্কৃতির ছোঁয়া</h2>
+                </div>
+                <div class="destination">
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div class="single-destination relative">
+                                <div class="single-destination-img">
+                                    <img src="assets/img/des1.jpg" alt="">
+                                </div>
+                                <div class="single-destination-content absolute text-center">
+                                   <div class="content flex justify-center items-center h-full flex-col gap-0">
+                                        <h3>মায়ালেক</h3>
+                                        <a href="#" class="common-button">বিস্তারিত</a>
+                                   </div>
+                                </div>
+                            </div>
+                            <div class="single-destination relative">
+                                <div class="single-destination-img">
+                                    <img src="assets/img/des5.jpg" alt="">
+                                </div>
+                                <div class="single-destination-content absolute text-center">
+                                    <div class="content flex justify-center items-center h-full flex-col gap-0">
+                                        <h3>মায়ালেক</h3>
+                                        <a href="#" class="common-button">বিস্তারিত</a>
+                                   </div>
+                                </div>
+                            </div>
+                            <div class="single-destination relative">
+                                <div class="single-destination-img">
+                                    <img src="assets/img/des4.JPEG" alt="">
+                                </div>
+                                <div class="single-destination-content absolute text-center">
+                                    <div class="content flex justify-center items-center h-full flex-col gap-0">
+                                        <h3>মায়ালেক</h3>
+                                        <a href="#" class="common-button">বিস্তারিত</a>
+                                   </div>
+                                </div>
+                            </div>
+                            <div class="single-destination relative">
+                                <div class="single-destination-img">
+                                    <img src="assets/img/des3.jpg" alt="">
+                                </div>
+                                <div class="single-destination-content absolute text-center">
+                                    <div class="content flex justify-center items-center h-full flex-col gap-0">
+                                        <h3>মায়ালেক</h3>
+                                        <a href="#" class="common-button">বিস্তারিত</a>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="single-destination relative">
+                                <div class="single-destination-img">
+                                    <img src="assets/img/des2.jpg" alt="">
+                                </div>
+                                <div class="single-destination-content absolute text-center">
+                                    <div class="content flex justify-center items-center h-full flex-col gap-0">
+                                        <h3>মায়ালেক</h3>
+                                        <a href="#" class="common-button">বিস্তারিত</a>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- end destination section  -->
+
+    <!-- start guide section  -->
+    <!-- end guide section  -->
+
+    <!-- start Latest Travel Stories section  -->
+     <section class="latest-travel-stories-section my-20">
+        <div class="container mx-auto">
+            <div class="latest-travel-stories-wrap">
+                <div class="title text-center pb-8">
+                    <h3>ভ্রমণ কাহিনি</h3> 
+                    <h2>আমাদের নতুন ভ্রমণ কাহিনি, রোমাঞ্চকর ভ্রমণ ও বিশেষজ্ঞের পরামর্শ</h2>
+                </div>
+                <div class="latest-travel-stories-content grid md:grid-cols-2 gap-x-20 gap-y-5">
+                    <div class="latest-travel-stories">
+                        <div class="latest-single-travel-stories">
+                            <div class="latest-single-travel-stories-title">
+                                <a href="#" class="block hover:text-[--primaryColor] text-xl duration-300 pb-2">গরমের ছুটিতে প্রথমবার বিদেশ যাচ্ছেন ভ্রমণ করবেন: টিপস এবং কৌশল</a>
+                            </div>
+                            <div class="latest-single-travel-stories-img" >
+                                <img src="assets/img/des1.jpg" alt="" class="">
+                            </div>
+                            <div class="latest-single-travel-stories-title">
+                                <p class="my-2">জীবনে প্রথমবারের জন্য দেশের বাইরে (International Travel) পা রাখতে চলেছেন? প্রথমবার কাছ থেকে দেখতে চলেছেন বিদেশের জল, মাটি, মানুষ, প্রকৃতি? পয়লা বিদেশ ভ্রমণের অভিজ্ঞতা কিন্তু সারা জীবনের জন্য মনের মণিকোঠায় সঞ্চিত হয়ে থাকবে।</p>
+                                <a href="#" class="block hover:text-[--primaryColor] text-base duration-300">বিস্তারিত</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="travel-stories">
+                        <div class="single-travel-stories flex gap-1 mb-3">
+                            <div class="single-travel-stories-img w-1/4" >
+                                <img src="assets/img/des2.jpg" alt="" class="w-full">
+                            </div>
+                            <div class="single-travel-stories-title">
+                                <a href="#" class="block hover:text-[--primaryColor] text-xl duration-300 pb-2">গরমের ছুটিতে প্রথমবার বিদেশ যাচ্ছেন ভ্রমণ করবেন: টিপস এবং কৌশল</a>
+                                <a href="#" class="block hover:text-[--primaryColor] text-base duration-300">বিস্তারিত</a>
+                            </div>
+                        </div>
+                        <div class="single-travel-stories flex gap-1 mb-3">
+                            <div class="single-travel-stories-img w-1/4" >
+                                <img src="assets/img/des1.jpg" alt="" class="">
+                            </div>
+                            <div class="single-travel-stories-title">
+                                <a href="#" class="block hover:text-[--primaryColor] text-xl duration-300 pb-2">বাজেটে কীভাবে ভ্রমণ করবেন: টিপস এবং কৌশল</a>
+                                <a href="#" class="block hover:text-[--primaryColor] text-base duration-300">বিস্তারিত</a>
+                            </div>
+                        </div>
+                        <div class="single-travel-stories flex gap-1 mb-3">
+                            <div class="single-travel-stories-img w-1/4" >
+                                <img src="assets/img/des3.jpg" alt="" class="">
+                            </div>
+                            <div class="single-travel-stories-title">
+                                <a href="#" class="block hover:text-[--primaryColor] text-xl duration-300 pb-2">বাজেটে কীভাবে ভ্রমণ করবেন: টিপস এবং কৌশল</a>
+                                <a href="#" class="block hover:text-[--primaryColor] text-base duration-300">বিস্তারিত</a>
+                            </div>
+                        </div>
+                        <div class="single-travel-stories flex gap-1 mb-3">
+                            <div class="single-travel-stories-img w-1/4" >
+                                <img src="assets/img/des4.JPEG" alt="" class="">
+                            </div>
+                            <div class="single-travel-stories-title">
+                                <a href="#" class="block hover:text-[--primaryColor] text-xl duration-300 pb-2">বাজেটে কীভাবে ভ্রমণ করবেন: টিপস এবং কৌশল</a>
+                                <a href="#" class="block hover:text-[--primaryColor] text-base duration-300">বিস্তারিত</a>
+                            </div>
+                        </div>
+                        <div class="single-travel-stories flex gap-1 mb-3">
+                            <div class="single-travel-stories-img w-1/4" >
+                                <img src="assets/img/des5.jpg" alt="" class="">
+                            </div>
+                            <div class="single-travel-stories-title">
+                                <a href="#" class="block hover:text-[--primaryColor] text-xl duration-300 pb-2">বাজেটে কীভাবে ভ্রমণ করবেন: টিপস এবং কৌশল</a>
+                                <a href="#" class="block hover:text-[--primaryColor] text-base duration-300">বিস্তারিত</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- end Latest Travel Stories section  -->
+
+    <!-- start guide section  -->
+     <section class="guide-section mt-20">
+        <div class="container mx-auto relative">
+            <div class="guide-wrap grid md:grid-cols-2 gap-12 py-24">
+                <div class="guide-content relative">
+                    <h2 class="text-3xl text-slate-900">ভ্রমণের জন্য আরও গাইড ও সহায়ক তথ্য</h2>
+                    <p class="text-base text-slate-900 py-3">যাত্রার পথে প্রতিটি পদক্ষেপই একটি নতুন অভিজ্ঞতা, আর প্রতিটি ভ্রমণের জন্য প্রয়োজন ভ্রমণ পরিকল্পনা গাইড। যাত্রার পথে স্মৃতিরা হয় সঙ্গী, আর যা ভ্রমণপ্রেমীদের মনে বেঁচে থাকে চিরকাল।</p>
+                    <a href="#" class="common-button">বিস্তারিত</a>
+                </div>
+                <div class="guide-items grid md:grid-cols-3 grid-cols-2 gap-x-2 gap-y-6">
+                    <div class="single-guide">
+                        <p class="bg-[--primaryColor] px-2 rounded-full text-white inline-block">1</p>
+                        <h3 class="pt-2">ভ্রমণের প্রয়োজনীয় সামগ্রী</h3>
+                        <p>আপনার ভ্রমণকে সহজ এবং সুবিধাজনক করতে প্রয়োজনীয় উপকরণ</p>
+                    </div>
+                    <div class="single-guide">
+                        <p class="bg-[--primaryColor] px-2 rounded-full text-white inline-block">2</p>
+                        <h3 class="pt-2">ভ্রমণের প্রয়োজনীয় সামগ্রী</h3>
+                        <p>আপনার ভ্রমণকে সহজ এবং সুবিধাজনক করতে প্রয়োজনীয় উপকরণ</p>
+                    </div>
+                    <div class="single-guide">
+                        <p class="bg-[--primaryColor] px-2 rounded-full text-white inline-block">3</p>
+                        <h3 class="pt-2">ভ্রমণের প্রয়োজনীয় সামগ্রী</h3>
+                        <p>আপনার ভ্রমণকে সহজ এবং সুবিধাজনক করতে প্রয়োজনীয় উপকরণ</p>
+                    </div>
+                    <div class="single-guide">
+                        <p class="bg-[--primaryColor] px-2 rounded-full text-white inline-block">4</p>
+                        <h3 class="pt-2">ভ্রমণের প্রয়োজনীয় সামগ্রী</h3>
+                        <p>আপনার ভ্রমণকে সহজ এবং সুবিধাজনক করতে প্রয়োজনীয় উপকরণ</p>
+                    </div>
+                    <div class="single-guide">
+                        <p class="bg-[--primaryColor] px-2 rounded-full text-white inline-block">5</p>
+                        <h3 class="pt-2">ভ্রমণের প্রয়োজনীয় সামগ্রী</h3>
+                        <p>আপনার ভ্রমণকে সহজ এবং সুবিধাজনক করতে প্রয়োজনীয় উপকরণ</p>
+                    </div>
+                    <div class="single-guide">
+                        <p class="bg-[--primaryColor] px-2 rounded-full text-white inline-block">6</p>
+                        <h3 class="pt-2">ভ্রমণের প্রয়োজনীয় সামগ্রী</h3>
+                        <p>আপনার ভ্রমণকে সহজ এবং সুবিধাজনক করতে প্রয়োজনীয় উপকরণ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- end guide section  -->
+
+    <!-- start blog section  -->
+    <section class="blog-section mb-20">
+        <div class="container mx-auto">
+            <div class="blog-wrap grid md:grid-cols-2 py-24">
+                <div class="blog-content relative p-12">
+                    <h2 class="text-3xl text-white">প্রতিটি ভ্রমণ এক একটি গল্প, আর প্রতিটি ব্লগ সেই গল্পের একটি অধ্যায়</h2>
+                    <p class="text-base text-white py-3">যাত্রার পথে প্রতিটি পদক্ষেপই একটি নতুন অভিজ্ঞতা, আর প্রতিটি পোস্ট সেই অভিজ্ঞতার স্মারক। যাত্রার পথে স্মৃতিরা হয় সঙ্গী, আর ব্লগ পোস্টে তারা চিরকাল বেঁচে থাকে।</p>
+                    <a href="#" class="common-button">অভিযান</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end blog section  -->
+
+    <!-- start tour place  -->
+     <section class="tour-place-section my-20">
+        <div class="container mx-auto">
+            <div class="tour-place-wrap">
+                <div class="title text-center pb-8">
+                    <h3>জনপ্রিয় পর্যটন স্থান</h3>
+                    <h2>"সৌমি'র সাথে পথে" বিশ্বের সবচেয়ে আশ্চর্যজনক স্থান ভ্রমণ</h2>
+                </div>
+                <div class="tour-place-content grid md:grid-cols-3 grid-cols-2 gap-4">
+                    <div class="single-tour-place">
+                        <div class="single-tour-place-content relative">
+                            <img src="assets/img/des8.JPEG" alt="">
+                            <div class="content1 absolute">
+                                <h2 class="text-white text-xl pb-2">মায়ালেক</h2>
+                                <p class="text-white">বান্দরবন, বাংলাদেশ</p>
+                                <a href="#" class="common-button">বিস্তারিত</a>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="single-tour-place">
+                        <div class="single-tour-place-content relative">
+                            <img src="assets/img/des7.jpg" alt="">
+                            <div class="content1 absolute">
+                                <h2 class="text-white text-xl pb-2">মায়ালেক</h2>
+                                <p class="text-white">বান্দরবন, বাংলাদেশ</p>
+                                <a href="#" class="common-button">বিস্তারিত</a>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="single-tour-place">
+                        <div class="single-tour-place-content relative">
+                            <img src="assets/img/des5.jpg" alt="">
+                            <div class="content1 absolute">
+                                <h2 class="text-white text-xl pb-2">মায়ালেক</h2>
+                                <p class="text-white">বান্দরবন, বাংলাদেশ</p>
+                                <a href="#" class="common-button">বিস্তারিত</a>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="single-tour-place">
+                        <div class="single-tour-place-content relative">
+                            <img src="assets/img/des4.JPEG" alt="">
+                            <div class="content1 absolute">
+                                <h2 class="text-white text-xl pb-2">মায়ালেক</h2>
+                                <p class="text-white">বান্দরবন, বাংলাদেশ</p>
+                                <a href="#" class="common-button">বিস্তারিত</a>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="single-tour-place">
+                        <div class="single-tour-place-content relative">
+                            <img src="assets/img/des3.jpg" alt="">
+                            <div class="content1 absolute">
+                                <h2 class="text-white text-xl pb-2">মায়ালেক</h2>
+                                <p class="text-white">বান্দরবন, বাংলাদেশ</p>
+                                <a href="#" class="common-button">বিস্তারিত</a>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="single-tour-place">
+                        <div class="single-tour-place-content relative">
+                            <img src="assets/img/des2.jpg" alt="">
+                            <div class="content1 absolute">
+                                <h2 class="text-white text-xl pb-2">মায়ালেক</h2>
+                                <p class="text-white">বান্দরবন, বাংলাদেশ</p>
+                                <a href="#" class="common-button">বিস্তারিত</a>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="single-tour-place">
+                        <div class="single-tour-place-content relative">
+                            <img src="assets/img/des1.jpg" alt="">
+                            <div class="content1 absolute">
+                                <h2 class="text-white text-xl pb-2">মায়ালেক</h2>
+                                <p class="text-white">বান্দরবন, বাংলাদেশ</p>
+                                <a href="#" class="common-button">বিস্তারিত</a>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="single-tour-place">
+                        <div class="single-tour-place-content relative">
+                            <img src="assets/img/about.jpg" alt="">
+                            <div class="content1 absolute">
+                                <h2 class="text-white text-xl pb-2">মায়ালেক</h2>
+                                <p class="text-white">বান্দরবন, বাংলাদেশ</p>
+                                <a href="#" class="common-button">বিস্তারিত</a>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- end tour place  -->
+
+    <!-- start explore section  -->
+    <section class="explore-section my-20">
+        <div class="container mx-auto">
+            <div class="explore-wrap flex justify-between items-center md:px-32 px-5" >
+                <h2 class="text-3xl text-white relative">
+                    বিশ্বের জনপ্রিয় ভ্রমণস্থানের গোপন সৌন্দর্য উপভোগ করুন                    
+                </h2>
+                <i class="fa-solid fa-earth-asia relative"></i>
+            </div>
+        </div>
+    </section>
+    <!-- end explore section  -->
+
+
+    <!-- start footer section -->
+    <footer class="footer-section mt-20">
+        <div class="container mx-auto">
+            <div class="pre-footer flex md:flex-row flex-col gap-10">
+                <div class="footer-logo md:text-left text-center">
+                    <div class="logo">
+                        <img src="assets/img/logo.png" alt="" class="md:mx-0 mx-auto">
+                    </div>                    
+                    <p class="py-6">"সৌমি'র সাথে পথে" হলো একটি ভ্রমণপ্রেমীদের জন্য তৈরি করা একটি প্ল্যাটফর্ম,"সৌমি'র সাথে পথে" হলো একটি ভ্রমণপ্রেমীদের জন্য তৈরি করা একটি প্ল্যাটফর্ম,</p> 
+                    <nav class="social-icon">
+                        <ul>
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                            <li><a href="#"><i class="fa-solid fa-basketball"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="about-menu">
+                    <h3 class="md:text-left text-center text-2xl">পরিচিতি</h3>
+                    <nav>
+                        <ul>
+                            <li class="block md:text-left text-center"><a href="#" class="text-[--textColor] hover:text-[--primaryColor] duration-300">হোম</a></li>
+                            <li class="block md:text-left text-center"><a href="#" class="text-[--textColor] hover:text-[--primaryColor] duration-300">পরিচিতি</a></li>
+                            <li class="block md:text-left text-center"><a href="#" class="text-[--textColor] hover:text-[--primaryColor] duration-300">গন্তব্যস্থল</a></li>
+                            <li class="block md:text-left text-center"><a href="#" class="text-[--textColor] hover:text-[--primaryColor] duration-300">ট্যুরস</a></li>
+                            <li class="block md:text-left text-center"><a href="#" class="text-[--textColor] hover:text-[--primaryColor] duration-300">যোগাযোগ</a></li>
+                            <li class="block md:text-left text-center"><a href="#" class="text-[--textColor] hover:text-[--primaryColor] duration-300">ব্লগ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="Company-menu">
+                    <h3 class="md:text-left text-center text-2xl">গন্তব্যস্থল</h3>
+                    <nav>
+                        <ul>
+                            <li class="block md:text-left text-center"><a href="#" class="text-[--textColor] hover:text-[--primaryColor] duration-300">এশিয়া</a></li>
+                            <li class="block md:text-left text-center"><a href="#" class="text-[--textColor] hover:text-[--primaryColor] duration-300">ইউরোপ</a></li>
+                            <li class="block md:text-left text-center"><a href="#" class="text-[--textColor] hover:text-[--primaryColor] duration-300">আমেরিকা</a></li>
+                            <li class="block md:text-left text-center"><a href="#" class="text-[--textColor] hover:text-[--primaryColor] duration-300">আফ্রিকা</a></li>
+                            <li class="block md:text-left text-center"><a href="#" class="text-[--textColor] hover:text-[--primaryColor] duration-300">অস্ট্রেলিয়া</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer-form md:text-left text-center">
+                    <h3 class="md:text-left text-center text-2xl pb-3">যোগাযোগ করুন</h3>
+                    <p>আপনার যেকোনো প্রশ্ন, মতামত বা প্রয়োজনীয়তা থাকলে আমাদের সাথে যোগাযোগ করতে পারেন। আমরা সবসময় আপনার সহায়তার জন্য প্রস্তুত।</p>
+                    <form action="" class="flex gap-3 pt-3 md:flex-row flex-col">
+                        <input type="email"  id="email" placeholder="email">
+                        <input type="submit" value="Subscribe">
+                    </form>
+                </div>
+            </div>
+            <div class="footer md:text-left text-center py-10">
+                <p>Copyright &copy; 2024 Adventales.</p>
+            </div>
+        </div>
+    </footer>
+   <!-- end footer section -->
+   <script src="assets/js/app.js"></script>
+</body>
+</html>

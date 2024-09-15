@@ -1,0 +1,328 @@
+/* global css  */
+@font-face {
+    font-family: liana;
+    src: url(../../LiAlinurNakkhatraUnicode.ttf);
+}
+@font-face {
+    font-family: teesta;
+    src: url(../../LiChayanaTeestaUnicode.ttf);
+}
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-size:20px;
+    color: var(--textColor);
+    font-family: liana;
+}
+*:focus {
+    outline: none;
+}
+h1, h2, h3, h4, h5, h6{    
+    color: var(--headingColor);
+}
+h1,  h3{
+    font-family: teesta;
+}
+p{
+    color: var(--textColor);
+}
+li{
+    list-style-type: none;
+    display: inline-block;
+}
+li a{
+    display: block;
+}
+a{
+    text-decoration: none;
+    font-family: liana;
+}
+.title h3{
+    font-size:20px;
+    color: var(--primaryColor);
+}
+.title h2 {
+    font-size: 35px;
+}
+/* header  */
+.logo img {
+    max-width: 70%;
+}
+.common-button{
+    background-color: var(--primaryColor);
+    color: var(--whiteColor);
+    padding: 7px 30px;
+    border-radius:5px;
+    display: inline-block;
+    transition: 0.3s;
+}
+.common-button:hover{
+    background-color: var(--textColor);
+    transition: 0.3s;
+}
+.menu ul li {    
+    padding-left:30px;
+}
+.menu ul li a{
+    transition: 0.3s;
+}
+.menu ul li a:hover{
+    color:var(--primaryColor);
+}
+.menu-icon{
+    display: none;
+}
+.menu-close-btn{
+    display: none;
+}
+
+/* start hero section  */
+.hero-section{
+    width: 100%;
+    background-image: url(../img/hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:800px;
+    position:relative;
+}
+.hero-section::before{
+    content: "";
+    background-color: rgba(0,0,0,0.5);
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+    z-index: 2;
+}
+.hero-wrap{
+    z-index:3
+}
+.social-icon ul li a i{
+    display: block;
+    background-color: var(--primaryColor);
+    color: var(--whiteColor);
+    padding: 8px 9px;
+    border-radius:50%;
+    transition: 0.4s;
+    font-size:16px;
+}
+.social-icon ul li a:hover i {
+    background-color: var(--textColor);
+    color: var(--whiteColor);
+    transform: scale(0.8);
+}
+/* end hero section  */
+
+/* start about section  */
+.about-section{
+    padding: 30px 0px;
+}
+.about-wrap{
+    transition: 0.3s;
+}
+.about-wrap::before {
+    content: "";
+    background-color: black;
+    height:100%;
+    width:100%;
+    opacity:0.3;
+    position: absolute;
+    top:0;
+
+}
+#close-btn {
+    top: 20px;
+    right: 30px;
+    z-index: 2;
+    cursor: pointer;
+    display: none;
+}
+div#close-btn i {
+    font-size: 40px;
+    color: var(--textColor);
+}
+.play-btn {
+    border-radius: 50%;
+    padding: 9px 12px;
+    margin-left: 10px;
+    line-height: 0;
+    transition: 0.3s;
+}
+.play-btn i{
+    color: var(--whiteColor);
+}
+div#video {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    display: none;
+    transition: 1s;
+}
+
+/* end about section  */
+
+/* start destination section  */
+
+ .single-destination-content {
+    background-color: var(--bgColor);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: scale(0.7); 
+    visibility: hidden;   
+    transition: 0.3s;
+    border-radius: 4px;
+}
+.single-destination:hover .single-destination-content {  
+    visibility: visible; 
+    transform: scale(1);
+    transition: 0.3s;
+}
+.single-destination-content h3 {
+    font-size: 25px;
+    color: var(--whiteColor);
+} 
+.single-destination-img img{
+    border-radius:4px;
+}
+/* end destination section  */
+
+/*start guide section */
+.guide-section{
+    background-image: url("../img/guide.jpg");
+    background-position: center;
+    background-attachment:scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;  
+}
+.guide-section::before{
+    content: "";
+    position: absolute;
+    height:100%;
+    width: 100%;
+    background: rgba(256,256,256,0.4);
+    top:0;
+    left: 0;
+}
+/* end guide section  */
+
+/*start blog-section */
+.blog-section{
+    background-image: url("../img/blog.jpg");
+    background-position: center;
+    background-attachment:scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;  
+}
+.blog-section::before{
+    content: "";
+    position: absolute;
+    height:100%;
+    width: 100%;
+    background-color: var(--bgColor);
+    top:0;
+    left: 0;
+}
+
+.blog-content.relative {
+    background: rgba(256,256,256,0.3);
+    border-radius: 5px;
+}
+/*end blog-section */
+
+/* start tour place section  */
+.single-tour-place-content{
+    transition: 0,3s;
+}
+.single-tour-place-content::before{
+    content: "";
+    position: absolute;
+    height:100%;
+    width: 100%;
+    background-color: var(--bgColor);
+    top:0;
+    left: 0;
+}
+
+.content1 {
+    bottom: 20px;
+    left: 20px;
+}
+.content1 a {
+    display: none;
+}
+.single-tour-place-content:hover .content1 a {
+    display: block;
+}
+.single-tour-place-content:hover .content1 p {
+    display: none;
+}
+/*end tour place-section */
+
+/* start explore section  */
+.explore-wrap {
+    background-image: url("../img/explore.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    position: relative;
+}
+.explore-wrap::before{
+    content: "";
+    position: absolute;
+    height:100%;
+    width: 100%;
+    background-color: var(--bgColor);
+    top:0;
+    left: 0;
+}
+.explore-wrap i {
+    font-size: 124px;
+    color: #fff;
+    border: 5px solid var(--primaryColor);
+    border-radius: 50%;
+}
+
+/* end explore section  */
+
+
+/* footer  */
+
+
+input#email {
+    border: none;
+    padding: 20px 15px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.94px;
+    text-transform: capitalize;
+    border: 1px solid var(--textColor);
+}
+input[type="submit"] {
+    background: var(--primaryColor);
+    border: none;
+    padding: 20px 15px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.94px;
+    color: var(--whiteColor);
+    margin-left: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background: var(--textColor);
+}
+
+/* footer */
+/* footer  */
+
